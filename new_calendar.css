@@ -1,0 +1,107 @@
+body {
+    background-color: #eeeeee;
+}
+.days_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+}
+.flex_item {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 170px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: Lato, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.flex_item:hover {
+    font-size: 60px;
+    cursor: pointer;
+}
+.year_month {
+    position: relative;
+    font-size: 30px;
+    font-family: Lato, sans-serif !important;
+    font-weight: bold !important;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back {
+    margin-right: 30px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.forward {
+    margin-left: 30px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.arrow {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Border radius of the scrollbar handle */
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar handle when hovered */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #ffffff !important;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 80%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #ffffff !important
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ffffff !important
+}
+.inner_times {
+    color: #000000;
+    background-color: #ffffff;
+}
