@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cart</title>
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+    <center>
+      <div class="items_container">
+        <div id="item_list" class="item_list">
+          <div class="listed_item">
+            <img src="icon.png" class="icon">
+              <p class="item_name">t-shirt </p>
+              <p class="quantity"> quantity: </p>
+              <input class="in_qut" id="in_qut" type="number"></input>
+              <p class="cost_label"> cost: </p>
+              <p class="cost">$14</p>
+          </div>
+        </div>
+        <div class="separate"></div>
+      </div>
+          <button class="check_out" onclick="check_out()">check out</button>
+        </center>
+    </div>
+</body>
+<script src="cart.js"></script>
+</html>
